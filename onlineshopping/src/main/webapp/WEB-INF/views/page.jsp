@@ -20,6 +20,9 @@
 <meta name="author" content="">
 
 <title>Online Shopping - ${title}</title>
+<script>
+	window.menu = '${title}';
+</script>
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -32,31 +35,36 @@
 </head>
 
 <body>
+	<div class="wrapper">
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
-	<!-- Page Content -->
-	<!-- Loading the home content-->
-	<c:if test="${userClickHome==true }">
-		<%@include file="home.jsp"%>
-	</c:if>
-	<!-- Load only when user click about -->
-	<c:if test="${userClickAbout==true }">
-		<%@include file="about.jsp"%>
-	</c:if>
-	<!-- Load only when user click contact -->
-	<c:if test="${userClickContact==true }">
-		<%@include file="contact.jsp"%>
-	</c:if>
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
+		<!-- Page Content -->
+		<div class="content">
+			<!-- Loading the home content-->
+			<c:if test="${userClickHome==true }">
+				<%@include file="home.jsp"%>
+			</c:if>
+			<!-- Load only when user click about -->
+			<c:if test="${userClickAbout==true }">
+				<%@include file="about.jsp"%>
+			</c:if>
+			<!-- Load only when user click contact -->
+			<c:if test="${userClickContact==true }">
+				<%@include file="contact.jsp"%>
+			</c:if>
 
+		</div>
 
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
 
-	<!-- Bootstrap core JavaScript -->
-	<script src="${js }/jQuery.js"></script>
-	<script src="${js}/bootstrap.min.js"></script>
-
+		<!-- Bootstrap core JavaScript -->
+		<script src="${js }/jQuery.js"></script>
+		<script src="${js}/bootstrap.min.js"></script>
+		<!-- self coded javascript to highlight the menu -->
+		<script src="${js}/myapp.js"></script>
+	</div>
 </body>
 
 </html>

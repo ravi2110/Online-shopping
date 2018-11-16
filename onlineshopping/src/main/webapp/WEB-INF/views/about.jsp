@@ -2,6 +2,27 @@
 	<div class="row">
 		<h1>About us</h1>
 		<hr />
-		<p>This is about us page</p>
 	</div>
+	
+	<p>
+		<br />This is about us page
+	</p>
+	<p>
+		<br />This is about us page
+	</p>
+	<p>
+		<br />This is about us page
+	</p>
+	<p>
+		<br />This is about us page
+	</p>
+	<p>
+		<br />This is about us page
+	</p>
+	<p>
+		<br />This is about us page
+	</p>
+
+
+
 </div>
