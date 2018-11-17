@@ -12,7 +12,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -52,6 +51,14 @@
 			<!-- Load only when user click contact -->
 			<c:if test="${userClickContact==true }">
 				<%@include file="contact.jsp"%>
+			</c:if>
+
+
+
+			<!-- Load only when user click contact -->
+			<c:if
+				test="${userClickAllProducts==true or userClickCategoryProducts==true}">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>

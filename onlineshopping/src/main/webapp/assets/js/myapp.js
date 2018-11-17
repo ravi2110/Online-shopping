@@ -10,8 +10,12 @@ $(function(){
 	case 'Home':
 		$('#home').addclass('active');
 		break;
+	case 'All Products':
+		$('#products').addclass('active');
+		break;
 	default:
-		$('#home').addclass('active');
+		$('#products').addclass('active');
+		$('#a_'+menu).addclass('active')
 		break;
 	}
 });
